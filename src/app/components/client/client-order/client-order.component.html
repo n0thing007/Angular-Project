@@ -1,0 +1,27 @@
+<br /> <br />
+<div *ngIf="orderList.length>0" class="centered"><table border="1">
+    <tr>
+    <th>Product Name</th>
+    <th>Product Image</th>
+    <th>Order Date</th>
+    <th>Mrp Price</th>
+    <th>Quantity</th>
+    <th>Total price</th>
+    <th>Order Status</th>
+    <th>Payment Status</th>
+    <th></th>
+
+    </tr>
+    <tr *ngFor="let order of orderList">
+        <td>{{order?.productname}}</td>
+        <td><img [src]="order?.image" class="image-thumbnail" /></td>
+        <td>{{getDate(order?.orderedDate)}}</td>
+        <td>{{order?.mrpPrice}}</td>
+        <td>{{order?.quantity}}</td>
+        <td>{{order?.totalPrice}}</td>
+        <td>{{order?.orderStatus === 'success' ? 'Order not confirmed' : order?.orderStatus}}</td>
+        <td>{{order?.paymentStatus === 'success' ? 'UnPaid' : order?.paymentStatus}}</td>
+        <td><div *ngIf="order?.paymentStatus !== 'PAID'"> <button (click)="addPayment(order)" mat-raised-button color="primary">Payment</button></div></td>
+    </tr>
+</table>
+</div>

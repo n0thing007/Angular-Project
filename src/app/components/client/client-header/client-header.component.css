@@ -1,0 +1,53 @@
+/* Client Header */
+
+/* Styles for the main navigation bar */
+.main {
+    background-color: #333; /* Dark grey background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Styles for the company logo */
+.main img {
+    width: 60px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Styles for navigation links */
+.main div {
+    cursor: pointer;
+    color: #fff; /* White text color */
+    font-size: 16px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.main div.selected {
+    font-weight: bold;
+    color: #999; /* Light grey text color for selected links */
+}
+
+/* Styles for the user menu */
+.user-name-item {
+    display: flex;
+    align-items: center;
+    color: #fff; /* White text color */
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.user-name-item:hover {
+    color: #999; /* Light grey text color on hover */
+}
+
+/* Styles for the expand icon */
+.user-name-item mat-icon {
+    font-size: 20px;
+    margin-left: 5px;
+}

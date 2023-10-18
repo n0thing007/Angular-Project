@@ -1,0 +1,71 @@
+/* Client Cart  */
+
+/* Styles for the container and centered content */
+.centered {
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Styles for the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+/* Styles for table header (th) */
+th {
+    background-color: #333; /* Dark grey background for table header */
+    color: #fff; /* White text color for table header */
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Styles for table cells (td) */
+td {
+    padding: 10px;
+}
+
+/* Styles for product images */
+img {
+    max-width: 100px;
+    max-height: 100px;
+    border: 1px solid #ccc;
+}
+
+/* Styles for quantity adjustment buttons */
+.button-padding {
+    background-color: #4CAF50; /* Green background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button-padding:hover {
+    background-color: #45a045; /* Slightly darker green on hover */
+}
+
+/* Styles for "Delete Cart" and "Place Order" buttons */
+button {
+    background-color: #4CAF50; /* Green background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a045; /* Slightly darker green on hover */
+}
+
+/* Style for the Grand Total text */
+b {
+    font-size: 18px;
+}

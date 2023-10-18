@@ -1,0 +1,84 @@
+/* Grocery List */
+
+/* Center the category selection */
+.centered {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Style the select dropdown */
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+}
+
+/* Style the "No product available" message */
+.centered.no-product-available {
+    color: #f00; /* Red text color */
+    font-weight: bold;
+}
+
+/* Style the product table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #aaa;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style the product image */
+table img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* Style the edit and delete buttons */
+button {
+    padding: 5px 10px;
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue background color on hover */
+}
+
+/* Style the pagination component */
+app-paging {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Style the pagination buttons */
+app-paging button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+app-paging button:hover {
+    background-color: #0056b3;
+}

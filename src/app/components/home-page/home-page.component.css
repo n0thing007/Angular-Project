@@ -1,0 +1,83 @@
+
+/* Main container styles */
+/* Set a fixed width and height for the carousel images */
+.ngb-carousel img {
+    width: 100%; /* Adjust the desired width */
+    height: 300px; /* Adjust the desired height */
+    object-fit: cover; /* Maintains aspect ratio and fills the container */
+  }
+  
+  /* Add additional styling to the wrapper (optional) */
+  .wrapper {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px; /* Set the same height as the images */
+    overflow: hidden; /* Hide any overflow outside the fixed dimensions */
+  }
+  
+  /* Optional: Center the images within the wrapper */
+  .wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  
+  /* Explore Products section styles */
+  .menu-section-heading {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .menu-item-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+  
+  .menu-item-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-item-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .menu-card-title {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Footer section styles */
+  .footer-section {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .food-munch-logo {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+  
+  .footer-section-mail-id {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .footer-section-address {
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0;
+  }

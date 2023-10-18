@@ -1,0 +1,10 @@
+<div class="main">
+    <div><img  src="../../../assets/images/fresh-logo" width="10%" height="90%"></div>
+    <div (click)="routerToLink('/client/home')" [class.selected]="url === '/client/home'">Home</div>
+    <div (click)="routerToLink('/client/cart')" [class.selected]="url === '/client/cart'">Cart List</div>
+    <div (click)="routerToLink('/client/order')" [class.selected]="url === '/client/order'">Order</div>
+    <div [matMenuTriggerFor]="menu" class="user-name-item"><div>{{userName}}&nbsp;</div><div><mat-icon>expand_more</mat-icon></div></div>   
+</div>
+<mat-menu #menu="matMenu">
+    <button (click)="routerToLink('/client/logout')" mat-menu-item><mat-icon>logout</mat-icon> Logout</button>
+  </mat-menu>

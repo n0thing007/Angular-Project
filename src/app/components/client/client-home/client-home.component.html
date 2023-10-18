@@ -1,0 +1,60 @@
+<br /><br />
+<div class="centered">
+    Select Cateogry :   <select [(ngModel)]="category" (change)="getProductByCategory()">
+        <option [value]="100">All</option>
+        <option *ngFor="let item of getCategoryList" [value]="item?.value">{{item?.name}}</option>
+    </select>
+</div>
+<br />
+<br />
+
+<div class="centered">
+    <div *ngIf="productList.length===0">
+        No product is available in list
+    </div>
+    <div *ngIf="productList.length>0">
+    <table border="1" class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Product Id</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Description</th>
+            <th scope="col">Product Image</th>
+            <th scope="col">Product MRP</th>
+            <th scope="col">Available Quantity</th>
+            <th scope="col">Mesurement</th>
+            <th scope="col">Order Quantity</th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tr *ngFor="let product of productList">
+            <td>{{product?.productId}}</td>
+            <td>{{product?.productname}}</td>
+            <td>{{product?.description}}</td>
+            <td><img [src]="product?.image" /></td>
+            <td>{{product?.mrpPrice}}</td>
+            <td>{{product?.quantity}}</td>
+            <td>{{product?.measurment}}</td>
+            <td><input type ="text" [id]="product?.productId" /></td>
+            <td>
+                <button (click)="addToCart(product)" mat-raised-button color="primary">Add to Cart</button>
+            </td>
+    </table>
+    </div>
+    
+</div>
+
+<br />
+<div *ngIf="productList.length>0" class="centered">
+    <app-paging
+        [totalItem]="totalItem"
+        [pageSize]="pageSize"
+        [offset]="offset"
+        (onNextPageClick)="onNextPageClick($event)"
+        (onPreviousPageClick)="onPreviousPageClick($event)"
+        (onFirstPageClick)="onFirstPageClick($event)"
+        (onLastPageClick)="onLastPageClick($event)"
+    ></app-paging>
+</div>
+<br />
+

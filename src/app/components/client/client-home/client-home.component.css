@@ -1,0 +1,72 @@
+/* Client Home */
+
+/* Centered style */
+.centered {
+    text-align: center;
+}
+
+/* Select box style */
+.centered select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333; /* Dark grey text color */
+}
+
+/* No product message style */
+.centered div {
+    font-size: 18px;
+    color: #777; /* Light grey text color */
+}
+
+/* Product list table style */
+.centered .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto; /* Center the table horizontally */
+}
+
+.centered .table th {
+    background-color: #444; /* Dark grey background color */
+    color: #fff; /* White text color */
+    padding: 10px;
+}
+
+.centered .table td {
+    padding: 10px;
+}
+
+.centered .table img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* Order quantity input style */
+.centered input[type="text"] {
+    width: 60px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333; /* Dark grey text color */
+}
+
+/* Add to Cart button style */
+.centered .table button {
+    background-color: #af3131; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.centered .table button:hover {
+    background-color: #e54545; /* Button background color on hover */
+}
+
+/* Pagination style */
+.centered app-paging {
+    margin: 20px auto; /* Center the pagination horizontally */
+}

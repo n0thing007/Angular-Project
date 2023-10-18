@@ -1,0 +1,101 @@
+    <!-- Home page below Home page header -->
+    <ngb-carousel *ngIf="images"><!-- takes image and convert into slideshow -->
+        <ng-template ngbSlide><!--it takes one image at a time-->
+          <div class="wrapper">
+            <img [src]="images[0]" ><!-- passed an image array in .ts-->
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="wrapper">
+            <img [src]="images[1]">
+          </div>
+      </ng-template>
+      <ng-template ngbSlide>
+          <div class="wrapper">
+            <img [src]="images[2]" >
+          </div>
+        </ng-template>
+      </ngb-carousel>
+      
+<!--To show client our products and redirect them into login client-->
+  <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="menu-section-heading">Explore Products</h2>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+                <div class="shadow menu-item-card p-3 mb-3">
+                    <img src="../../../assets/images/fruits.jpg" class="menu-item-image w-100" />
+                    <h1 class="menu-card-title">Fruits</h1>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+              <div class="shadow menu-item-card p-3 mb-3">
+                  <img src="../../../assets/images/vegetables.jpg" class="menu-item-image w-100" />
+                  <h1 class="menu-card-title">Vegetables</h1>
+              </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+            <div class="shadow menu-item-card p-3 mb-3">
+                <img src="../../../assets/images/cereals.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Cerals</h1>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+          <div class="shadow menu-item-card p-3 mb-3">
+              <img src="../../../assets/images/bevarages1.jpg" class="menu-item-image w-100" />
+              <h1 class="menu-card-title">Beverages</h1>
+
+          </div>
+
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+            <img src="../../../assets/images/snacks.jpg" class="menu-item-image w-100" />
+            <h1 class="menu-card-title">Snacks</h1>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+      <div class="shadow menu-item-card p-3 mb-3">
+          <img src="../../../assets/images/frozen.jpg" class="menu-item-image w-100" />
+          <h1 class="menu-card-title">Frozen Foods</h1>
+      </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+    <div class="shadow menu-item-card p-3 mb-3">
+        <img src="../../../assets/images/household.jpg" class="menu-item-image w-100" />
+        <h1 class="menu-card-title">Household Products</h1>
+    </div>
+</div>
+
+<div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+  <div class="shadow menu-item-card p-3 mb-3">
+      <img src="../../../assets/images/General.jpg" class="menu-item-image w-100" />
+      <h1 class="menu-card-title">General</h1>
+  </div>
+</div>
+ </div>
+
+</div>
+  </div>
+
+<div class="footer-section pt-5 pb-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+              <img src="../../../assets/images/fresh-mart.jpeg" class="food-munch-logo" />
+              <h1 class="footer-section-mail-id"></h1>
+              <p class="footer-section-address">
+                #401, Kushwah Chambers, 702 Makwana Rd ,Gamdevi, Marol Andheri (E), Mumbai-59
+              </p>
+          </div>
+      </div>
+  </div>
+</div>

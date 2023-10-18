@@ -1,0 +1,51 @@
+/* Client Order */
+
+/* Styles for the container */
+.centered {
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Styles for the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #ccc; /* Border for table and table cells */
+}
+
+/* Styles for table header (th) */
+th {
+    background-color: #333; /* Dark grey background for table header */
+    color: #fff; /* White text color for table header */
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Styles for table cells (td) */
+td {
+    padding: 10px;
+}
+
+/* Styles for product images */
+.image-thumbnail {
+    max-width: 100px;
+    max-height: 100px;
+    border: 1px solid #ccc;
+}
+
+/* Styles for payment button */
+button {
+    background-color: #4CAF50; /* Green background color for the payment button */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a045; /* Slightly darker green on hover */
+}

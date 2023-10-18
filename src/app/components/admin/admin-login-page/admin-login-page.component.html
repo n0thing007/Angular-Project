@@ -1,0 +1,67 @@
+ <!-- <div class="main client-login">
+    <div class="center-content">
+        <h1>Admin LogIn</h1>
+        
+        <form [formGroup]="adminLoginForm">
+        <div class="item-icon">
+            <div class="icon">
+            </div>
+            <input type="text" id="email" formControlName="email" placeholder="Email">
+        </div>
+        <div *ngIf="adminLoginForm.controls['email'].invalid && (adminLoginForm.controls['email'].dirty || adminLoginForm.controls['email'].touched)"
+            class="error-message">
+            <div *ngIf="adminLoginForm.controls['email'].errors?.['required']">
+                Email should not blank
+            </div>
+            <div *ngIf="adminLoginForm.controls['email'].errors?.['pattern']">
+                Enter Valid email
+            </div>
+        </div>
+        <br />
+        <div class="item-icon">
+            <div class="icon">
+            </div><input type="password" formControlName="password" placeholder="Password">
+        </div>
+        <!-- Password Validation code 
+        <div *ngIf="adminLoginForm.controls['password'].invalid && (adminLoginForm.controls['password'].dirty || adminLoginForm.controls['password'].touched)"
+            class="error-message">
+            <div *ngIf="adminLoginForm.controls['password'].errors?.['required']">
+                Password should not blank
+            </div>
+            <!-- <div *ngIf="clientLoginForm.controls['password'].errors?.['maxlength']">
+                Maximum 8 character required
+            </div> 
+            <div *ngIf="adminLoginForm.controls['password'].errors?.['minlength']">
+                Minium 8 character required
+            </div>
+        </div>
+        <!--End of Password Validation 
+        <br />
+            <div>
+                <button (click)="signIn()" mat-raised-button color="primary" [disabled]="!adminLoginForm.controls['password'].valid || !adminLoginForm.controls['email'].valid">SignIn</button>
+            </div>
+        </form>
+    </div>
+</div>  -->
+
+ <br /><br />
+    <div class="main admin-login">
+        <h1>Admin SignIn</h1>
+        <br />
+          Email Input 
+        <div class="item-icon">
+           <div class="icon">
+            </div><input type="text" [(ngModel)]="email" placeholder="Email"><!--Two way data binding-->
+        </div>
+        <br />
+          Password Input 
+        <div class="item-icon">
+           <div class="icon">
+            </div><input type="password" [(ngModel)]="password" placeholder="Password">
+        </div>
+        <br />
+         Sign-In Button
+        <div>
+            <button (click)="signIn()" mat-raised-button color="primary">SignIn</button>
+        </div>
+    </div> 

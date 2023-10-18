@@ -1,0 +1,51 @@
+<br /><br />
+<div class="centered">
+    Select Cateogry :   <select [(ngModel)]="category" (change)="getProductByCategory()">
+        <option [value]="100">All</option>
+        <option *ngFor="let item of getCategoryList" [value]="item?.value">{{item?.name}}</option>
+    </select>
+</div>
+<br />
+<div *ngIf="productList.length===0" class="centered">
+    No product is available in list
+</div>
+<div *ngIf="productList.length>0" class="centered">
+<table border="1">
+    <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product Description</th>
+        <th>Product Image</th>
+        
+        <th>Product MRP</th>
+        <th>Product Quantity</th>
+        <th>Mesurement</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let product of productList">
+        <td>{{product?.productId}}</td>
+        <td>{{product?.productname}}</td>
+        <td>{{product?.description}}</td>
+        <td><img [src]="product?.image" /></td>
+        <td>{{product?.mrpPrice}}</td>
+        <td>{{product?.quantity}}</td>
+        <td>{{product?.measurment}}</td>
+        <td>
+            <button (click)="editProduct(product)" mat-raised-button color="primary">Edit</button>&nbsp;
+            <button (click)="delProduct(product)" mat-raised-button color="primary">Delete</button>
+        </td>
+</table>
+</div>
+<br />
+<div *ngIf="productList.length>0" class="centered">
+    <app-paging
+    [totalItem]="totalItem"
+    [pageSize]="pageSize"
+    [offset]="offset"
+    (onNextPageClick)="onNextPageClick($event)"
+    (onPreviousPageClick)="onPreviousPageClick($event)"
+    (onFirstPageClick)="onFirstPageClick($event)"
+    (onLastPageClick)="onLastPageClick($event)"
+></app-paging>
+</div>
+<br />

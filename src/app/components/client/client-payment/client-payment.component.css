@@ -1,0 +1,54 @@
+/* Client Payment */
+
+/* Styles for the payment tab container */
+.payment-tab {
+    background-color: #f2f2f2; /* Background color */
+    border: 1px solid #ccc; /* Border to create a card-like effect */
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Styles for the centered heading */
+.payment-tab h1 {
+    text-align: center;
+    color: #333; /* Text color */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Styles for the form elements */
+.payment-tab table {
+    width: 100%;
+}
+
+.payment-tab table td {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.payment-tab input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styles for the "Submit" button */
+.payment-tab button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #af3131; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.payment-tab button:hover {
+    background-color: #e54545; /* Button background color on hover */
+}

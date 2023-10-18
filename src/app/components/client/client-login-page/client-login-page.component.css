@@ -1,0 +1,90 @@
+/* Client Login Page */
+
+/* Main container styling */
+.client-login {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading style */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Grey text color */
+}
+
+/* Input fields and icons */
+.item-icon {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    background-color: #333; /* Grey background color */
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Grey border */
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333; /* Grey text color */
+}
+
+/* Error message styles */
+.error-message {
+    color: #d9534f; /* Red color for error messages */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Sign In button style */
+button {
+    width: 100%;
+    background-color: #333; /* Grey background color */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:disabled {
+    background-color: #ccc; /* Light grey background for disabled state */
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #555; /* Dark grey background on hover */
+}
+
+/* New user registration and forgot password links */
+.sign-up {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #000; /* Black text color */
+}
+
+/* Spacing between elements */
+br {
+    margin-bottom: 10px;
+}

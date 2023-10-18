@@ -1,0 +1,40 @@
+<br /><br />
+<div class="payment-tab">
+<div class="centered">
+  <h1>Payment</h1>
+</div>
+<br />
+<div class="centered">
+  <table>
+    <tr>
+      <td>Total Price</td>
+      <td><input type="text" disabled [(ngModel)]="totalPrice" /></td>
+    </tr>
+    <tr>
+      <td>NameOnCard</td>
+      <td><input type="text"  [(ngModel)]="nameOnCard" /></td>
+    </tr>
+    <tr>
+      <td>CardNumber</td>
+      <td><input type="text"  [(ngModel)]="cardNumber" /></td>
+    </tr>
+    <tr>
+      <td>Expyear</td>
+      <td><input type="text"  [(ngModel)]="expYear" /></td>
+    </tr>
+    <tr>
+      <td>CVV</td>
+      <td><input type="text"  [(ngModel)]="cvv" /></td>
+    </tr>
+    
+    <tr>
+      <td>PaidAmount</td>
+      <td><input type="text"  [(ngModel)]="totalPrice" disabled /></td>
+    </tr>
+  </table>
+</div>
+<br />
+<div class="centered">
+  <button (click)="onPayment()" mat-raised-button color="primary">Submit</button>
+</div>
+</div>
